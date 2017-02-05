@@ -48,16 +48,27 @@ p {
  }
 
 /* MEDIA QUERIES -- ADD MOBILE*/
-
   
+/* Mobile */
 
+@media (min-width: 640px) {
+  .cssClass {
+    color: #000000;
+    font-size: 25px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 
- 
+  /* Tablets */
+
   @media (min-width: 768px) {
     .container {
       width: 750px;
     }
   }
+
+  /* Laptops */
 
    @media (min-width: 992px) {
    .container {
@@ -73,12 +84,20 @@ p {
      width:21%;
    }
  }
+  /* Desktops */
 
   @media (min-width: 1200px)  {
     .container {
       width: 1170px;
     }
   }
+
+  @media (min-width: 1920px) {
+    .container {
+      width: 1800px;
+    }
+  }
+
 /* HEADER */
 header {
   color: #FFFFFF;
