@@ -47,28 +47,41 @@ p {
    margin:0 2% 20px;
  }
 
-/* MEDIA QUERIES -- ADD MOBILE*/
-  
-/* Mobile */
+/* MEDIA QUERIES */
 
-@media (min-width: 640px) {
-  .cssClass {
-    color: #000000;
-    font-size: 25px;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-}
-
-  /* Tablets */
-
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
+  @media (min-width: 640px) {
+      html {font-size: 125%;}
+      .column {
+          float: right;
+          padding-left: 1rem;
+          padding-right: 1rem;
+      }
+      .container:before,
+      .container:after {
+       content: " ";
+       display: inline-block;
+      }
+      .container {
+          width: 700px;
+      }
+      .testimonials {
+          text-align: center;
+          display: block;
+          position: center;
+      }
+      .action {
+          text-align: center;
+          display: block;
+          position: center;
+      }
     }
-  }
 
-  /* Laptops */
+   @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+
 
    @media (min-width: 992px) {
    .container {
@@ -267,16 +280,32 @@ header .hero img {
   font-style: italic; 
 }
 
-
-
-
-
-
-
-
-
-
-
+/* TESTIMONIALS */
+.testimonials {
+  padding: 4em 0;
+  text-align: center;
+}
+.testimonials h2 {
+  color: #3498DB;
+}
+.testimonials ul li {
+  list-style-type: none;
+}
+.testimonials blockquote {
+  color: #FFFFFF;
+  text-align: left;
+  font-style: italic;
+  background: #34495E;
+  position: relative;
+  padding: 30px;
+  width: auto;
+  margin:0;
+}
+.testmionials blockquote:after {
+  top: 100%;
+  left: 13%;
+  border: solid transparent
+}
 
 
 
