@@ -1,0 +1,23 @@
+{
+  "name": "blocbox",
+  "version": "1.0.0",
+  "description": "web ",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcastillo630/Blocbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vcastillo630/Blocbox/issues"
+  },
+  "homepage": "https://github.com/vcastillo630/Blocbox#readme"
+}

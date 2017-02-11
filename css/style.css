@@ -46,70 +46,11 @@ p {
    min-height: 1px;
    margin:0 2% 20px;
  }
-
-/* MEDIA QUERIES */
-
-  @media (min-width: 640px) {
-      html {font-size: 125%;}
-      .column {
-          float: right;
-          padding-left: 1rem;
-          padding-right: 1rem;
+ #dashimage {
+        width: 70%;
       }
-      .container:before,
-      .container:after {
-       content: " ";
-       display: inline-block;
-      }
-      .container {
-          width: 700px;
-      }
-      .testimonials {
-          text-align: center;
-          display: block;
-          position: center;
-      }
-      .action {
-          text-align: center;
-          display: block;
-          position: center;
-      }
-    }
-
-   @media (min-width: 768px) {
-      .container {
-        width: 750px;
-      }
-    }
 
 
-   @media (min-width: 992px) {
-   .container {
-     width: 970px;
-   }
-   .one-half {
-     width:46%;
-   }
-   .one-third {
-     width:29.33333%;
-   }
-   .one-fourth {
-     width:21%;
-   }
- }
-  /* Desktops */
-
-  @media (min-width: 1200px)  {
-    .container {
-      width: 1170px;
-    }
-  }
-
-  @media (min-width: 1920px) {
-    .container {
-      width: 1800px;
-    }
-  }
 
 /* HEADER */
 header {
@@ -209,8 +150,10 @@ header .hero img {
   text-align: center;
   padding:4em 0;
 }
-
-.pricing h2, .pricing p {
+.pricing h2 {
+  color: #3498DB;
+}
+.pricing p {
   color:#000000;
 }
 .pricing ul {
@@ -242,13 +185,13 @@ header .hero img {
   right:0;
   top: 0;
   text-align: center;
-  margin: 0 -15px 40px;
-  padding: 10px 0;
+  margin: 0 -15px 20px;
+  padding:10px 0;
 }
 .box h4 {
   font-size: 50px;
   font-weight: normal;
-  margin: 40px 0 10px;
+  margin: 30px 0 10px;
   color: #3498DB;
 }
 .box h4 span {
@@ -264,7 +207,7 @@ header .hero img {
 }
 .box ul li {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 100;
 }
 .box .btn {
@@ -299,17 +242,150 @@ header .hero img {
   position: relative;
   padding: 30px;
   width: auto;
-  margin:0;
+  margin: 0;
 }
 .testmionials blockquote:after {
   top: 100%;
   left: 13%;
-  border: solid transparent
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+.testimonials img {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  float: left;
+  display: inline-block;
+  margin: 20px 10px 0 0;
+}
+.testimonials p.name {
+  float: left;
+  display: inline-block;
+  text-align: left;
+  font-size: 13px;
+  margin-top: 0 10px 10px 10px;
+}
+
+/* CALL TO ACTION */
+.action {
+  display: block;
+  margin:3em auto 3em;
 }
 
 
+/* MEDIA QUERIES */
+
+  @media (min-width: 640px) {
+      html {font-size: 125%;}
+      .column {
+        float: right;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .container:before,
+      .container:after {
+       content: " ";
+       display: inline-block;
+      }
+      .container {
+        width: 700px;
+      }
+      .testimonials {
+        text-align: center;
+        display: block;
+        position: center;
+        float: center;
+      }
+      .action {
+        text-align: center;
+        display: block;
+        position: center;
+      }
+    }
+
+  @media (min-width: 768px){
+    .container {
+      width: 700px;
+    }
+     header .hero h1{
+       font-size: 38px;
+       margin-top: 95px;
+     }
+     header .hero p {
+       font-size: 18px;
+     }
+
+     /*
+      #dashimage {
+        width: 100%;
+      } */
+  }
+
+   @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+  /* Desktops */
+
+  @media (min-width: 1200px)  {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .container {
+      width: 1800px;
+    }
+  }
 
 
+/* MOBILE MEDIA QUERIES */
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #dashimage {
+      width: 130%;
+      margin-left: -15%;
+    }
+    .btn {
+      font-size: 40px;
+    }
+    header .hero h1 {
+      font-size: 70px;
+      font-weight: bold;
+    }
+    header .hero p {
+      font-size: 33px;
+      line-height: 40px;
+      font-weight: 500;
+    }
+    header nav ul > li {
+    font-size: 40px;
+    margin: 0px 8px;
+    }
+    header nav ul {
+    padding: 0px !important;
+    }
+    .one-half {
+     width:46%;
+     margin-top: 25px;
+   }
+  }
 
 
 
