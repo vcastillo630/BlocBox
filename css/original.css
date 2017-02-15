@@ -108,13 +108,6 @@ header .hero img {
   margin:3em auto 0;
 }
 
-/* RESPONSIVE HEADER */
-@media (max-width: 700px) {
-  header .hero img {
-    width: 80%;
-  }
-}
-
 /* BUTTONS */
 .btn {
   border-radius: 4px;
@@ -328,41 +321,13 @@ header .hero img {
        padding: 2em 0;
        text-align: left;
      }
-     footer .one-third {
-      text-align: left;
-      padding: 1em 0;
-     }
-     footer .link-block {
-      text-align: left;
-     }
      footer .right-footer-block {
        background-color: #3498DB;
      }
      footer .logo{
-       padding: 14px 40px 40px 40px;
+       padding: 2em 0 2em 1.5em;
      }
    }
-
-   @media (max-width: 992px) {
-    footer {
-      height: 180px;
-    }
-    footer .one-third {
-      text-align: center;
-      width: 100%;
-    }
-    footer .link-block {
-      margin: 1em 0 0 0;
-      height: 1em; 
-    }
-    footer .logo {
-      padding: 1em 0;
-      text-align: center;
-    }
-   }
-
-
-
 
 /* MEDIA QUERIES */
 
@@ -425,23 +390,7 @@ header .hero img {
    .one-fourth {
      width:21%;
    }
-  }
-  @media (max-width: 992px) {
-    header {
-      position: relative;
-   }
-  }
-
-  @media (max-width: 443px) {
-    header ul {
-      top:23px;
-      font-size: 16px;
-    }
-    .btn-outline {
-      display: none;
-    }
-  }
-
+ }
   /* Desktops */
 
   @media (min-width: 1200px)  {
@@ -455,6 +404,7 @@ header .hero img {
       width: 1800px;
     }
   }
+
 
 /* MOBILE MEDIA QUERIES */
   @media only screen 
@@ -478,8 +428,8 @@ header .hero img {
       font-weight: 500;
     }
     header nav ul > li {
-    font-size: 35px;
-    margin: -15px 8px;
+    font-size: 40px;
+    margin: 0px 8px;
     }
     header nav ul {
     padding: 0px !important;
@@ -487,26 +437,12 @@ header .hero img {
     .one-half {
      width:46%;
      margin-top: 25px;
-    }
+   }
   }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-  header nav ul > li {
-    font-size: 35px;
-    margin: -55px 8px;
-    margin-top: -18px;
-    }
-    header nav {
-    padding: 2em 0;
-    }
-    header .site-logo {
-    padding-top: 20px;
-    }
-    header .one-half {
-    margin: 0px 2% -24px;
-    float: auto;
-    }
-  }
+
+
+
+
+
+
