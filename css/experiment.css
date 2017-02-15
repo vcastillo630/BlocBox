@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h2 {
   font-size: 28px;
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 5px;
 }
 
@@ -46,9 +46,9 @@ p {
    min-height: 1px;
    margin:0 2% 20px;
  }
- #dashimage {
+ /* #dashimage {
         width: 70%;
-      }
+      } */
 
 
 
@@ -94,8 +94,8 @@ header .hero {
 }
 header .hero h1 {
   font-size: 48px;
-  font-weight: normal;
-  margin: 95px 0 0;
+  font-weight: 100;
+  margin: 10px 0 20px;
 }
 header .hero p {
   font-size: 22px;
@@ -108,7 +108,24 @@ header .hero img {
   margin:3em auto 0;
 }
 
-/* RESPONSIVE HEADER */
+/* RESPONSIVE NAVIGATION */
+
+@media (max-width:992px) {
+  header {
+    position: relative;
+  }
+}
+
+@media (max-width: 443px) {
+  header ul {
+    top:25px;
+    font-size: 15px;
+  }
+  .btn-outline {
+    display: none;
+  }
+}
+
 @media (max-width: 700px) {
   header .hero img {
     width: 80%;
@@ -192,13 +209,13 @@ header .hero img {
   right:0;
   top: 0;
   text-align: center;
-  margin: 0 -15px 20px;
-  padding:10px 0;
+  margin: 0 -15px 40px;
+  padding:20px 0;
 }
 .box h4 {
   font-size: 50px;
   font-weight: normal;
-  margin: 30px 0 10px;
+  margin: 40px 0 10px;
   color: #3498DB;
 }
 .box h4 span {
@@ -214,7 +231,7 @@ header .hero img {
 }
 .box ul li {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 100;
 }
 .box .btn {
@@ -228,6 +245,17 @@ header .hero img {
   color: #FEFEFE;
   line-height: 15px;
   font-style: italic; 
+}
+
+@media(max-width: 750px) {
+  .pricing ul li {
+    clear: both;
+    float: none;
+  }
+  .box {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 /* TESTIMONIALS */
@@ -262,10 +290,13 @@ header .hero img {
   height: 0;
   width: 0;
   position: absolute;
+  pointer-events: none;
+  border-width: 10px;
+  margin-left: -10px;
 }
 .testimonials img {
-  height: 65px;
-  width: 65px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   float: left;
   display: inline-block;
@@ -276,7 +307,7 @@ header .hero img {
   display: inline-block;
   text-align: left;
   font-size: 13px;
-  margin-top: 0 10px 10px 10px;
+  margin-top: 30px
 }
 
 /* CALL TO ACTION */
@@ -313,7 +344,7 @@ header .hero img {
    background-color: transparent;
  }
  footer .logo {
-   padding: 2.35em 0;
+   padding: .25em 0;
    margin: 0 auto;
    display: block;
  }
@@ -322,47 +353,34 @@ header .hero img {
      footer{
        background-color: #3498DB;
        background-image: linear-gradient(to left, #3498DB 0%, #3498DB 33.33337%, #34495E 33.33337%, #34495E 100%);
-       height: 100px;
-     }
-     footer p, footer nav ul{
-       padding: 2em 0;
+       height: 70px;
        text-align: left;
      }
-     footer .one-third {
+    footer .one-third {
       text-align: left;
       padding: 1em 0;
-     }
-     footer .link-block {
+    }
+    footer .link-block {
       text-align: left;
-     }
-     footer .right-footer-block {
-       background-color: #3498DB;
-     }
-     footer .logo{
-       padding: 14px 40px 40px 40px;
-     }
-   }
+    }
+  }
 
-   @media (max-width: 992px) {
+  @media (max-width: 992px) {
     footer {
-      height: 180px;
+      height: 170px;
     }
     footer .one-third {
       text-align: center;
       width: 100%;
     }
-    footer .link-block {
-      margin: 1em 0 0 0;
-      height: 1em; 
+    footer .line-block {
+      margin: .25em 0 0 0;
     }
     footer .logo {
-      padding: 1em 0;
-      text-align: center;
+      padding: 2em 0;
+      text align: center;
     }
-   }
-
-
-
+  }
 
 /* MEDIA QUERIES */
 
@@ -396,7 +414,7 @@ header .hero img {
 
   @media (min-width: 768px){
     .container {
-      width: 700px;
+      width: 750px;
     }
      header .hero h1{
        font-size: 38px;
@@ -405,12 +423,14 @@ header .hero img {
      header .hero p {
        font-size: 18px;
      }
-
-     /*
-      #dashimage {
-        width: 100%;
-      } */
   }
+
+     /* More padding for the small screen sizes*/
+    @media (max-width: 800px) {
+      header, .benefits, .pricing, .testimonials, .advertisement, footer {
+        padding: 0 5%;
+      }
+    }
 
    @media (min-width: 992px) {
    .container {
@@ -425,23 +445,7 @@ header .hero img {
    .one-fourth {
      width:21%;
    }
-  }
-  @media (max-width: 992px) {
-    header {
-      position: relative;
-   }
-  }
-
-  @media (max-width: 443px) {
-    header ul {
-      top:23px;
-      font-size: 16px;
-    }
-    .btn-outline {
-      display: none;
-    }
-  }
-
+ }
   /* Desktops */
 
   @media (min-width: 1200px)  {
@@ -455,6 +459,7 @@ header .hero img {
       width: 1800px;
     }
   }
+
 
 /* MOBILE MEDIA QUERIES */
   @media only screen 
@@ -478,8 +483,8 @@ header .hero img {
       font-weight: 500;
     }
     header nav ul > li {
-    font-size: 35px;
-    margin: -15px 8px;
+    font-size: 40px;
+    margin: 0px 8px;
     }
     header nav ul {
     padding: 0px !important;
@@ -487,27 +492,12 @@ header .hero img {
     .one-half {
      width:46%;
      margin-top: 25px;
-    }
+   }
   }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-  header nav ul > li {
-    font-size: 35px;
-    margin: -55px 8px;
-    margin-top: -18px;
-    }
-    header nav {
-    padding: 2em 0;
-    }
-    header .site-logo {
-    padding-top: 20px;
-    }
-    header .one-half {
-    margin: 0px 2% -24px;
-    float: auto;
-    }
-  }
-  
+
+
+
+
+
+
