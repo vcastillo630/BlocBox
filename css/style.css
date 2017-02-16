@@ -519,15 +519,15 @@ header .hero img {
    height: 100vh;
    width:14.66666667%;
    color:#FFFFFF;
-   background: #34495E;
-   background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+   background: #353942;
+   background-image: linear-gradient(206deg, #26292F 0%, #494950 100%);
    float:left;
    position: fixed;
    display:block;
   }
  .left-nav .site-logo {
    padding:20px 0;
-   background:#34495E;
+   background:#087171;
    display:block;
    text-align: center;
   }
@@ -562,7 +562,7 @@ header .hero img {
 /* LEFT NAVBAR SETTINGS */
 .left-nav .settings {
    position:absolute;
-   background:#22303E;
+   background:#282B32;
    width:100%;
    bottom:0;
    left:0;
@@ -606,7 +606,7 @@ header .hero img {
    font-weight: 100;
    margin:0;
    font-size: 35px;
-   color: #3498DB;
+   color: #087171;
    line-height: 44px;
    float: left;
    display:inline-block;
@@ -696,7 +696,7 @@ header .hero img {
    margin:0;
   }
  .item-box h2 a {
-   color: #3498DB;
+   color: #087171;
    text-decoration: none;
   }
  .item-box h2 img {
@@ -712,6 +712,15 @@ header .hero img {
    line-height: 18px;
    margin:5px 0 0;
   }
+ .left-nav .items ul li.active {
+  color: #FFFFFF;
+  background-color: #4B4C58;
+  height: 22px;
+  padding: 5px 7px 5px 9px;
+  width: 100%;
+  margin-left: -12px;
+  border-right: 8px solid #CA7030;
+ }
 
 
 
