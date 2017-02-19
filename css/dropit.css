@@ -6,19 +6,47 @@
  * Free to use and abuse under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
  */
-
 /* These styles assume you are using ul and li */
+
+
+.settings .dropit .dropit-submenu {
+    position: absolute;
+    bottom: 100%;
+    right: -30px;
+    z-index: 10000;
+    display: none;
+    min-width: 150px;
+    list-style: none;
+    padding: 0px 20px 20px 20px;
+    margin: 10px 0;
+}
+
+
+ .settings .dropit .dropit-open .dropit-submenu:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 8px 0px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 97px;
+  right: 37px;
+ }
+
+
 
 .dropit {
   list-style: none;
-	padding: 0;
-	margin: 15px 0 0;
+	padding: 5px;
+	margin: -5px 0 0;
   float: right;
   display: inline-block;
 }
 .dropit .dropit-trigger { position: relative; }
 
-.dropit .dropit-submenu {
+.content .dropit .dropit-submenu {
     position: absolute;
     top: 100%;
     right: 0; /* dropdown left or right */
@@ -26,22 +54,16 @@
     display: none;
     min-width: 100px;
     list-style: none;
-	padding: 20px;
-	margin: 20px 0 0;
+	 padding: 20px;
+	 margin: 20px 0 0;
 }
 
-.dropit .dropit-open .dropit-submenu { 
-    display: block; 
-    background:#FFFFFF;
-    box-shadow: 0px 2px 4px 0px rgba (0,0,0,0.30);
-    border-radius: 4px;
-}
- .dropit .dropit-open .dropit-submenu:after {
+ .content .dropit .dropit-open .dropit-submenu:after {
   content: " ";
   position: absolute;
   border-style: solid;
   border-width: 0 8px 8px;
-  border-color: #FFFFFF transparent;
+  border-color: #EFEDED transparent;
   display: block;
   width: 0;
   z-index: 1;
@@ -56,8 +78,17 @@
   margin-bottom: 0px;
  }
  .dropit .dropit-open .dropit-submenu li a {
-  color:#34495E;
+  color:#087171;
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight:100;
  }
+
+ .dropit .dropit-open .dropit-submenu {
+  display: block;
+  background: #EFEDED;
+  box-shadow: 0px 2px 4px 0px rgba (0,0,0,0.30);
+  border-radius: 4px;
+ }
+
+
