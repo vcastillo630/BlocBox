@@ -88,7 +88,7 @@ header nav {
 }
 @media (min-width: 992px) {
   .marketing-nav {
-    text-align: center;
+    text-align: left;
  }
 }
 header nav ul {
